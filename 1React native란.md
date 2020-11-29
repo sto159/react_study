@@ -4,9 +4,7 @@
 
 Cross Platform으로 써 하나의 언어로 iOS Android 동시개발이 가능한 Opensource
 
-
-
-## React의 장점
+#### React의 장점
 
 javascript를 기반으로 하기때문에 웹 node, javascript개발자들이 쉽게 입문할수 있다.
 
@@ -16,7 +14,7 @@ javascript를 기반으로 하기때문에 웹 node, javascript개발자들이 �
 
 오픈소스로 풀이 넓다.
 
-##React의 단점
+#### React의 단점
 
  리엑트 만의 다른 방식(States,Props) 등을 공부해야 한다.
 
