@@ -1,4 +1,4 @@
-# 1React native란?
+# React native란?
 
 페이스북에서 만든 Frameworks 중 하나
 
