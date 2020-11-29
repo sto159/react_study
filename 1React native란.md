@@ -88,3 +88,10 @@ android Debug...
 
 Version 29.0 등이 뜨면 설정이 잘된것입니다.
 
+
+
+
+
+### 참고문헌
+
+스무디한 잔 마시며 끝내는 React Native -김정헌 저-
