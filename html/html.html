@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+       
+    <script>
+        var tv = new Object();
+        tv.color = "white";
+        tv.price =  300000;
+        tv.info = function() {
+            document.write("tv 색상: " + this.color, "<br>");
+            document.write("tv 가격: " + this.price, "<br>");
+        }
+        document.write("<h2>tv 객체 메서드 호출</h2>");
+        tv.info();
+
+        var today = new Date();
+        var nowYear = today.getFullYear();
+
+        var theDate = new Date(nowYear, 11,31);
+        var diffDate = theDate.getTime() - today.getTime();
+
+        var result = Math.ceil( diffDate /(60 * 1000 * 60 * 24));
+        document.write("연말 D-day: " + result + "일 남았습니다.<br><br>");
+
+        document.write("컴까기 가위바위보");
+
+        var game = prompt("가위 ~ 바위 ~ 보!", "가위");
+        var gmaeNum;
+        switch(game){
+            case "가위":
+                gameNum = 1; break;
+            case "바위" :
+                gameNum = 2; break;
+            case "보" :
+                gameNum = 3; break;
+            default: alert("잘못 작성했습니다.");
+            location.reload();
+        }
+
+        var com = Math.ceil(Math.random() * 3)
+
+        if(gameNum == com){
+            document.write("이김<br>");
+        }else {
+            document.write("짐<br>");
+        }
+
+        var arr_1 = ["사당", "교대", "강남", "방배"];
+        var arr_2 = ["신사", "압구정", "옥수"];
+
+        var result = arr_1.join("-<br>");
+        console.log(result);
+
+        result = arr_1.slice(1,2);
+        console.log(result);
+
+        var userName = prompt("What's your name?","Name");
+
+        var upperName = userName.toUpperCase();
+        document.write(upperName, "<br>");
+
+        var userNum =prompt("phoneNumber","Number");
+        var result = userNum.substring(0, userNum.length - 4) + "****";
+        document.write(result, "<br>");
+
+        var addNum = 0;
+        var subNum = 1000;
+
+        var auto_1 = setInterval(function(){
+            addNum++;
+            console.log("addNum:" +addNum);
+        },3000);
+
+        var auto_2 = setInterval(function(){
+            subNum--;
+            console.log("addNum:" +subNum);
+        },3000);
+            </script>   
+    <!--<script src = "script.js"></script>-->
+</head>
+<body>
+
+    <h2>일정 시간 간격으로 값 증감시키기</h2>
+   <button onclick= "clearInterval(auto_1)">증가 정지</button>
+   <button onclick= "clearInterval(auto_2)">감소 정지</button>
+    
+
+</body>
+</html>
+
+<!--var age = prompt("당신의 나이는 ?", "0");
+        if(age >= 20){
+            document.write("당신은 성인입니다.");
+        }else{
+            document.write("당신은 미성년자입니다.");
+        }-->
